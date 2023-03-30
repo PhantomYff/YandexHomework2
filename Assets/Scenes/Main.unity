@@ -1739,6 +1739,7 @@ MonoBehaviour:
   _hitEffectPrefab: {fileID: 5230661751765255219, guid: 55bc631d7e56cb4489184fa67e3bb7c3,
     type: 3}
   _resources: {fileID: 236826724}
+  _coinCubeFactory: {fileID: 1297550355}
 --- !u!1 &568862266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +3966,162 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1297550354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297550356}
+  - component: {fileID: 1297550355}
+  m_Layer: 0
+  m_Name: CoinCubeFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1297550355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297550354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0647aa1073856e94b8d12155f120327a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 3199864851085936197, guid: 8378b4a4808981c4080d3013db554410, type: 3}
+  _resources: {fileID: 236826724}
+  _duration: 0.3
+  _flyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 4.124672
+      outSlope: 4.124672
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10988751
+    - serializedVersion: 3
+      time: 0.3265679
+      value: 0.59208524
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3616554
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6791737
+      value: -0.002746582
+      inSlope: -3.8599782
+      outSlope: -3.8599782
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08544534
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6860125
+      value: 0
+      inSlope: 2.7886436
+      outSlope: 2.7886436
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.79832923
+      value: 0.17349243
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9106891
+      value: 0.002388874
+      inSlope: -4.436047
+      outSlope: -4.436047
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.26371002
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9152689
+      value: 0.0024948614
+      inSlope: 2.4439633
+      outSlope: 2.4439633
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9522831
+      value: 0.037685093
+      inSlope: -0.0034172349
+      outSlope: -0.0034172349
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9828406
+      value: 0.0016387352
+      inSlope: -1.8758274
+      outSlope: -1.8758274
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.991031
+      value: 0.007870524
+      inSlope: 1.5688747
+      outSlope: 1.5688747
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.9424993
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.8775244
+      outSlope: -0.8775244
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _yModifier: 2
+  _XAndZSpread:
+    <Min>k__BackingField: 1
+    <Max>k__BackingField: 2
+--- !u!4 &1297550356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297550354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302197584
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class Clickable : MonoBehaviour
     [SerializeField] private float _scaleTime = 0.25f;
     [SerializeField] private HitEffect _hitEffectPrefab;
     [SerializeField] private Resources _resources;
+    [SerializeField] private CoinCubeFactory _coinCubeFactory;
 
     private int _coinsPerClick = 1;
 
@@ -18,7 +19,7 @@ public class Clickable : MonoBehaviour
     {
         HitEffect hitEffect = Instantiate(_hitEffectPrefab, transform.position, Quaternion.identity);
         hitEffect.Init(_coinsPerClick);
-        _resources.CollectCoins(1, transform.position);
+        _coinCubeFactory.Create(1);
         StartCoroutine(HitAnimation());
     }
 
